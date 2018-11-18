@@ -40,7 +40,6 @@
     "webpack-cli": "^3.1.2"
   },
   "dependencies": {
-    "babel-preset-react": "^6.24.1",
     "react-highlight": "^0.12.0"
   }
 }
