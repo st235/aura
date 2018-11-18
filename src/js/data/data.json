@@ -4,43 +4,10 @@
 			"id": 0,
 			"title": "Bubble sort",
 			"description": "bla-bla-bla",
-			"code": "import java.util.Scanner;\r\n \r\nclass BubbleSort {\r\n  public static void main(String []args) {\r\n    int n, c, d, swap;\r\n    Scanner in = new Scanner(System.in);\r\n \r\n    System.out.println(\"Input number of integers to sort\");\r\n    n = in.nextInt();\r\n \r\n    int array[] = new int[n];\r\n \r\n    System.out.println(\"Enter \" + n + \" integers\");\r\n \r\n    for (c = 0; c < n; c++)\r\n      array[c] = in.nextInt();\r\n   \r\n    for (c = 0; c < ( n - 1 ); c++) {\r\n      for (d = 0; d < n - c - 1; d++) {\r\n        if (array[d] > array[d+1]) \/* For descending order use < *\/\r\n        {\r\n          swap       = array[d];\r\n          array[d]   = array[d+1];\r\n          array[d+1] = swap;\r\n        }\r\n      }\r\n    }\r\n \r\n    System.out.println(\"Sorted list of numbers:\");\r\n \r\n    for (c = 0; c < n; c++)\r\n      System.out.println(array[c]);\r\n  }\r\n}"
-		},
-		{
-			"id": 1,
-			"title": "Merge sort",
-			"description": "one-more-sort",
-			"code": "some code"
-		},
-		{
-			"id": 2,
-			"title": "Quick sort",
-			"description": "one-more-super-sort",
-			"code": "some code"
-		},
-		{
-			"id": 3,
-			"title": "Insertion Sort",
-			"description": "Insertion sort is a comparison-based algorithm that builds a final sorted array one element at a time. It iterates through an input array and removes one element per iteration, finds the place the element belongs in the array, and then places it there.",
-			"code": "some code"
-		},
-		{
-			"id": 4,
-			"title": "Heapsort",
-			"description": "Heapsort is a comparison-based algorithm that uses a binary heap data structure to sort elements. It divides its input into a sorted and an unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element and moving that to the sorted region.",
-			"code": "some code"
-		},
-		{
-			"id": 5,
-			"title": "Counting Sort",
-			"description": "Counting sort is an integer sorting algorithm that assumes that each of the  input elements in a list has a key value ranging from  to , for some integer . For each element in the list, counting sort determines the number of elements that are less than it. Counting sort can use this information to place the element directly into the correct slot of the output array.",
-			"code": "some code"
-		},
-		{
-			"id": 6,
-			"title": "Radix Sort",
-			"description": "Radix sort is an integer sorting algorithm that sorts data with integer keys by grouping the keys by individual digits that share the same significant position and value (place value). Radix sort uses counting sort as a subroutine to sort an array of numbers. Because integers can be used to represent strings (by hashing the strings to integers), radix sort works on data types other than just integers.",
-			"code": "some code"
+			"code": {
+				"data": "import java.util.Scanner;\r\n \r\nclass BubbleSort {\r\n  public static void main(String []args) {\r\n    int n, c, d, swap;\r\n    Scanner in = new Scanner(System.in);\r\n \r\n    System.out.println(\"Input number of integers to sort\");\r\n    n = in.nextInt();\r\n \r\n    int array[] = new int[n];\r\n \r\n    System.out.println(\"Enter \" + n + \" integers\");\r\n \r\n    for (c = 0; c < n; c++)\r\n      array[c] = in.nextInt();\r\n   \r\n    for (c = 0; c < ( n - 1 ); c++) {\r\n      for (d = 0; d < n - c - 1; d++) {\r\n        if (array[d] > array[d+1]) \/* For descending order use < *\/\r\n        {\r\n          swap       = array[d];\r\n          array[d]   = array[d+1];\r\n          array[d+1] = swap;\r\n        }\r\n      }\r\n    }\r\n \r\n    System.out.println(\"Sorted list of numbers:\");\r\n \r\n    for (c = 0; c < n; c++)\r\n      System.out.println(array[c]);\r\n  }\r\n}",
+				"language": "Java"
+			}
 		}
 	]
 }
