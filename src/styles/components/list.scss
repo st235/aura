@@ -1,0 +1,35 @@
+.aura-items-list {
+    li {
+        padding: 1em;
+        margin-bottom: .125em;
+        display: block;
+        list-style: none;
+
+        &:hover {
+            color: black;
+            background-color: white;
+        }
+
+        &:hover .aura-items-list-header {
+            color: black;
+            background-color: white;
+        }
+
+        &:hover .aura-items-list-description {
+            color: black;
+            background-color: white;
+        }
+    }
+}
+
+.aura-items-list-header {
+    text-align:  start;
+    font-size:  1.55em;
+    color: white;
+}
+
+.aura-items-list-description {
+    text-align:  start;
+    font-size:  1.3em;
+    color: grey;
+}
