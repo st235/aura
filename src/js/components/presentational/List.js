@@ -10,8 +10,8 @@ export default class List extends Component {
     _createListItem(items, onItemClickListener) {
         return items.map((value, index) => (
             <li key={`aura_il_${index}`} onClick={() => { onItemClickListener(value) }}>
-                <div className="aura-items-list-header">{value.header}</div>
-                <div className="aura-items-list-description">{value.description}</div>
+                <div className="aura-items-list-title">{value.title}</div>
+                <div className="aura-items-list-subtitle">{value.subtitle}</div>
             </li>
             ));
     }
