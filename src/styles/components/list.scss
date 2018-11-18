@@ -1,4 +1,4 @@
-.aura-items-list { 
+.aura-items-list {
     height: 100vh;
     overflow-y: scroll;
     margin: 0px 0px 0px 0px;
@@ -22,6 +22,21 @@
         }
 
         &:hover .aura-items-list-subtitle {
+            color: black;
+            background-color: white;
+        }
+
+        &.aura-items-list-active {
+          color: black;
+          background-color: white;
+        }
+
+        &.aura-items-list-active .aura-items-list-title {
+            color: black;
+            background-color: white;
+        }
+
+        &.aura-items-list-active .aura-items-list-subtitle {
             color: black;
             background-color: white;
         }
