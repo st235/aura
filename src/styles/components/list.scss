@@ -1,4 +1,7 @@
-.aura-items-list {
+.aura-items-list { 
+    height: 100vh;
+    overflow-y: scroll;
+
     li {
         padding: 1em;
         margin-bottom: .125em;
