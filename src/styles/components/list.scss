@@ -13,6 +13,7 @@
         &:hover {
             color: black;
             background-color: white;
+            border-radius: 8px;
         }
 
         &:hover .aura-items-list-title {
@@ -29,12 +30,14 @@
 
 .aura-items-list-title {
     text-align:  start;
-    font-size:  1.55em;
+    font-size:  1.35em;
     color: white;
 }
 
 .aura-items-list-subtitle {
     text-align:  start;
-    font-size:  1.3em;
-    color: grey;
+    font-size:  1.15em;
+    color: #696969;
+    margin: 4px 0px 0px 0px;
+    font-weight: bold;
 }
