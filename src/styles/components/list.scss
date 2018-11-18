@@ -15,25 +15,25 @@
             background-color: white;
         }
 
-        &:hover .aura-items-list-header {
+        &:hover .aura-items-list-title {
             color: black;
             background-color: white;
         }
 
-        &:hover .aura-items-list-description {
+        &:hover .aura-items-list-subtitle {
             color: black;
             background-color: white;
         }
     }
 }
 
-.aura-items-list-header {
+.aura-items-list-title {
     text-align:  start;
     font-size:  1.55em;
     color: white;
 }
 
-.aura-items-list-description {
+.aura-items-list-subtitle {
     text-align:  start;
     font-size:  1.3em;
     color: grey;
