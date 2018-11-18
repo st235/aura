@@ -9,7 +9,7 @@ export default class CodeContainer extends Component {
     render() {
         const { code } = this.props;
 
-        return (<div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        return (<div className="col-lg-5 col-md-5 col-sm-5 col-xs-5">
                   <Code code={code.data} lang={code.language || PREFERED_LANGUAGE}/>
                 </div>);
     }

@@ -24,7 +24,7 @@ export default class AuraAppContainer extends Component {
     render() {
         const { items, selectedItem } = this.state;
 
-        return <div className="container row">
+        return <div className="container-fluid row">
                     <ItemsConatainer items={items} onItemClickListener={ i => this._onSelectedItemChanged(i) } />
                     <DescriptionContainer title={selectedItem.title} description={selectedItem.description} />
                     <CodeContainer code={selectedItem.code} />

@@ -6,7 +6,7 @@ export default class ItemsContainer extends Component {
     render() {
         const { items, onItemClickListener } = this.props;
 
-        return (<div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+        return (<div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                   <List items={items} onItemClickListener={onItemClickListener} />
                 </div>);
     }
