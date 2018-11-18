@@ -1,14 +1,15 @@
-# aura
+## aura
 Interview preparation kit 🥳
 
 The site is made primarily for educational purposes.
 
-### Contribution guide
+## Contribution guide
 
 In order to add new information (for example, new sort algorithm) to the site, you need to change [data.json](https://github.com/st235/aura/blob/master/src/js/data/data.json).
 
 ### License 
 
+```
 MIT License
 
 Copyright (c) 2018 - present Alexander Dadukin, Olga Vyrostko
@@ -30,3 +31,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
