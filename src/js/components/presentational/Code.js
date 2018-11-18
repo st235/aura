@@ -5,7 +5,7 @@ import Highlight from 'react-highlight';
  export default class Code extends Component {
      render() {
          const { code, lang } = this.props;
-         return <Highlight className={this.lang}>{this.code}</Highlight>;
+         return <Highlight className={lang}>{code}</Highlight>;
      }
  };
 

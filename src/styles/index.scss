@@ -1,8 +1,9 @@
 @import 'constants';
 @import 'grid';
-@import './styles/highlighter';
 
 @import './components/list.scss';
+@import './components/headers.scss';
+@import './components/highlighter.scss';
 
 body {
     background-color: $theme-background;
