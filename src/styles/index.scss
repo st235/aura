@@ -9,9 +9,7 @@ body {
     background-color: $theme-background;
 }
 
-div {
-    color: white;
-}
-
-.app {
+#app {
+    height: 100vh;
+    overflow-y: hidden;
 }
