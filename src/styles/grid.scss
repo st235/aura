@@ -1,0 +1,135 @@
+// containers
+.container,
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+// rows
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+}
+
+.row.reverse {
+  flex-direction: row-reverse;
+}
+
+.col.reverse {
+  flex-direction: column-reverse;
+}
+
+
+// columns sizes(xs, sm, md, lg)
+$sizes: (xs: null, sm: 49rem, md: 65rem, lg: 76rem);
+
+
+// column helpers
+@mixin col-offset($column) {
+  margin-left: 100% / 12 * $column;
+}
+
+@mixin col-numbered($column) {
+  flex-basis: 100% / 12 * $column;
+  max-width: 100% / 12 * $column;
+}
+
+@mixin break($breakpoint) {
+  @if $breakpoint {
+    @media only screen and (min-width: $breakpoint) { @content; }
+  }
+  @else {
+    @content;
+  }
+}
+
+// build columns for each size is sizes map
+@each $size, $breakpoint in $sizes {
+
+  @include break($breakpoint) {
+    %col-base-#{$size} {
+      box-sizing: border-box;
+      flex: 0 0 auto;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+
+    %col-auto-#{$size} {
+      flex-grow: 1;
+      flex-basis: 0;
+      max-width: 100%;
+    }
+
+    .col-#{$size} {
+      @extend %col-base-#{$size};
+      @extend %col-auto-#{$size};
+    }
+
+    @for $i from 0 through 12 {
+      .col-#{$size}-offset-#{$i} {
+        @extend %col-base-#{$size};
+        @include col-offset($i);
+      }
+    }
+
+    @for $i from 1 through 12 {
+      .col-#{$size}-#{$i} {
+        @extend %col-base-#{$size};
+        @include col-numbered($i);
+      }
+    }
+
+    .start-#{$size} {
+      justify-content: flex-start;
+      text-align: start;
+    }
+
+    .center-#{$size} {
+      justify-content: center;
+      text-align: center;
+    }
+
+    .end-#{$size} {
+      justify-content: flex-end;
+      text-align: end;
+    }
+
+    .top-#{$size} {
+      align-items: flex-start;
+    }
+
+    .middle-#{$size} {
+      align-items: center;
+    }
+
+    .bottom-#{$size} {
+      align-items: flex-end;
+    }
+
+    .around-#{$size} {
+      justify-content: space-around;
+    }
+
+    .between-#{$size} {
+      justify-content: space-between;
+    }
+
+    .first-#{$size} {
+      order: -1;
+    }
+
+    .last-#{$size} {
+      order: 1;
+    }
+  }
+}
