@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Highlight from 'react-highlight';
 
- export default class Code extends Component {
-     render() {
-         const { code, lang } = this.props;
-         return <Highlight className={lang}>{code}</Highlight>;
-     }
- };
+export default class Code extends Component {
+    render() {
+        const { code, lang } = this.props;
+        return <Highlight className={lang}>{code}</Highlight>;
+    }
+};
 
- Code.propTypes = {
-     code: PropTypes.string,
-     lang: PropTypes.string
- };
+Code.propTypes = {
+    code: PropTypes.string,
+    lang: PropTypes.string
+};
